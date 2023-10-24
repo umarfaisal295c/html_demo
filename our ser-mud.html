@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:  #1f242d;
+    
+}
+header{
+    /* position: fixed; */
+    width: 100%;
+    padding: 15px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: #000;
+    
+}
+.logo{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 40px #0ef;
+    cursor: pointer; 
+}
+.logo span{
+    color: transparent;
+    
+}
+@keyframes ring{
+    0%{
+        color:#e45c00;
+    }
+    50%{
+        color: #18b201;
+    }
+    100%{
+        color: #0ef;
+    }
+}
+
+.nav-items a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 35px;
+    text-decoration: none;
+    color:#fff;
+    transition: 1s;
+}   
+.nav-items a:hover,
+.nav-items a.active{
+    color: #0ef;
+}
+.services{
+    animation: slideRigth 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin-bottom: 10px;
+}
+.services h2{
+    margin: 4rem;
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding-left:10;
+    text-align:center;
+}
+.services h2 span{
+    color: #0ef;
+   padding-bottom: 20px;
+
+}
+ .ser-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    height: 200px;
+    /* width: 350px; */
+/*  */
+}
+.ser-box{
+    flex: 1 1 1.5rem;
+    background: #323946;
+    padding: 1rem 1.5rem 1.5rem;
+    border-radius: 2rem;
+    border: 2px solid #1f242d;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    transition: 0.5s ease;
+
+}
+.ser-box:hover{
+    border-color: #0ef;
+    transform: scale(1.1);
+}
+
+.ser-box i{
+    font-size: 5rem;
+    color: #0ef;
+}
+.ser-box img{
+    font-size: 5rem;
+    color: #0ef;
+    filter: invert(0);
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.ser-box:hover img{
+    /* filter: invert(1); */
+    opacity: 1;
+}
+.ser-box h3{
+    color: #fff;
+    font-size: 2rem;
+}
+.ser-box p{
+    font-size: 16px;
+    color: beige;
+    margin: 0.5rem 0 2rem;
+}.btn{
+    font-size: 25px;
+    font-weight: 600;
+    color: #0ef;
+    text-decoration: none;
+    border: 2px solid #0ef;
+    padding: 12px 28px;
+    border-radius: 40px;
+    transition: 1s;
+}
+.btn:hover{
+    color: black;
+    background: #0ef;
+    box-shadow: 0 0 40px #0ef;
+}
+@keyframes slideRigth{
+    0%{
+        /* transform: translateX(-100px); */
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(0.9);
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" title="Mudassir Electrical Engineer">MEE <span style="--i:1">.<span style="--i:2">.<span style="--i:3">.</span></span></span></div>
+        
+        <div class="nav-items">
+            <a href="umar.html" class="active" title="Home Page">Home</a>
+            <a href="about-mud.html" title="About Page">About</a>
+            <a href="our ser-mud.html" title="About Mudassir Mujahid">Our Services</a>
+            <a href="con-mud.html" title="Contact Us">Contact Us</a>
+            <a href="login page.html" title="Login Page">Login</a>
+        </div>
+        
+    </header>
+    <section class="services">
+        <h2>Our <span>Services</span></h2>
+        <div class="ser-con">
+            <div class="ser-box">
+                <!-- <i class='bx bx-building-house' ></i> -->
+                <img src="images/house w.png" alt="">
+                <h3>House Wiring</h3>
+                <p>Electrical wiring is an electrical installation of cabling and associated devices such as switches, distribution boards, sockets, and light fittings in a structure.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+
+            <div class="ser-box">
+                <!-- <i class='bx bxs-paint'></i> -->
+                <img src="images/gen1.png" alt="" >
+                <h3>Generator </h3>
+                <p>In electricity generation, a generator[1] is a device that converts motive power (mechanical energy) or fuel-based power (chemical energy) into electric power for use in an external circuit.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+
+            <div class="ser-box">
+                <!-- <i class='bx bx-bar-chart-alt'></i> -->
+                <img src="images/ups.png" alt="">
+                <h3>UPS Construction</h3>
+                <p>An uninterruptible power supply or uninterruptible power source (UPS) is an electrical apparatus that provides emergency power to a load when the input power source or mains power fails.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

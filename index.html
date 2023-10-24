@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link of css style sheet -->
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <!-- link of googlr fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <!-- link of bocicons  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+    <!-- link of JS typing name. -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <title>CodeWithUmar</title>
+</head>
+<body class="dark-theme">
+    <div id="head">
+        <header>
+            <div id="CWU"><a href="index.html">CodeWithUmar</a></div>
+            <div class="dp">
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Menu</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Courses</li> </a>     
+                        <li class="hower">Tutorial
+                        <div class="caret"></div>
+
+                            <ul>
+                                <li>C++</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>Java</li>
+                                <li>javaScript</li>
+                                <li>Rect JS</li>
+                                <li>PYTHON</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                        </li>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="#"><li>My Gear</li></a>
+                        <a href="#"><li> Notes</li></a>
+                        <a href="#"><li> Work With Us</li></a>
+                        
+                    </ul>
+                </div>
+            </div>
+            <script>
+                const dropdowns=document.querySelectorAll('.dropdown');
+                dropdowns.forEach(dropdown => {
+                    const select=dropdown.querySelector('.select');
+                    const caret=dropdown.querySelector('.caret');
+                    const menu=dropdown.querySelector('.menu');
+                    const options=dropdown.querySelectorAll('.menu li');
+                    const selected=dropdown.querySelector('.selected');
+
+                    select.addEventListener('click',()=>{
+                        select.classList.toggle('select-clicked');
+                        caret.classList.toggle('caret-rotate');
+                        menu.classList.toggle('menu-open');
+                    })
+
+                    options.forEach(option => {
+                        option.addEventListener('click',()=>{
+                            selected.innerText=option.innerText;
+                            select.classList.remove('selected-clicked');
+                            caret.classList.remove('caret-rotate');
+                            menu.classList.remove('menu-open');
+
+                            // option.forEach(option=>{
+                            //     option.classList.remove()
+                            // })
+                        })
+                    })
+                });
+            </script>
+            <div id="nav-items">
+                <a href="index.html">Home</a>
+                <a href="index2.html">Courses</a>
+                <a href="">Tutorial</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+                <a href="">My Gear</a>
+                <a href="">Notes</a>
+                <a href="">Work With Us</a>
+                <!-- <a href=""><i class='bx bx-moon'></i></a> -->
+            </div>
+            <i class='bx bxs-moon' id="icon" ></i>
+            
+            <script>
+                // let icon = document.getElementById("icon");
+                // icon.onclick = function(){
+                //     document.body.classList.toggle("dark-theme");
+                    let icon;
+                    document.getElementById("icon").addEventListener("click",function(){
+                        document.body.classList.toggle("dark-theme");
+                    })
+                    // if(document.body.classList.contains("dark-theme")){
+                    //     icon.src="icon" ;
+                    // }else{
+                    //     icon.src="images/sun.png" ;
+                        
+                    // }
+                
+            </script>
+            <div id="btnn"> 
+                <a href="index3.html" class="btn">Login</a>
+                <a href="" class="btnS">Signup</a>
+            </div>
+            
+
+            
+        </header>
+    
+    <hr color="#d1d5db">
+
+
+
+
+    <section>
+        <div id="home-icon"><a href="index.html"><i class='bx bxs-home'></i></a></div>
+        <div id="nav-items2">
+            <a href=""> HTML</a>
+            <a href="">CSS</a>
+            <a href="">JS</a>
+            <a href="">C</a>
+            <a href="">C++</a>
+            <a href="">JAVA</a>
+            <a href="">PYTHON</a>
+            <a href="">REACT JS</a>
+            
+        </div>
+        <div class="searchBox">
+            <input type="text" class="searchText" placeholder="Search">
+            <div  class="searchBtn">
+                <i class='bx bx-search-alt-2'></i>
+
+            </div>
+        </div>
+        <script>
+            let search=document.querySelector(".bx-search-alt-2")
+            search.onclick=function(){
+                document.querySelector(".container").classList.toggle("active");
+            }
+        </script>
+        
+        </section>
+    <hr class="hr" color="#d1d5db">
+
+    </div>
+</div>  
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+    <!--  -->
+        <section id="welcome">
+            <div class="text">
+                <h3>Welcome to <span class="c"></span></h3>
+                <span class="u">Learn <span class="cc"></span></span>
+                <P>Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</P>
+                <a href="index2.html" class="fc">Free Course</a>
+                <a href="" class="eb">Explore Bolg</a>
+                
+            </div>
+            
+            <!-- <dim class="img">
+                <img src="images/dd1.avif" alt="">
+            </dim> -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active" style="background: url(images/editumar.jpeg);"></div>
+                    <div class="slide" style="background: url(images/website1.avif);"></div>
+                    <div class="slide" style="background: url(images/html\ css.avif);"></div>
+                </div>
+            </div>
+            <div class="slider-controler">
+                <img src="images/prev.png"  class="prev-slide" alt="">
+                <img src="images/next.png"  class="next-slide" alt="">
+            </div>
+            <script>
+                const slider =document.querySelector(".slider");
+                const slides= document.querySelectorAll(".slide");
+                const prevBtn= document.querySelector(".prev-slide");
+                const nextBtn= document.querySelector(".next-slide");
+
+                let slideIndex=0;
+                slides[slideIndex].classList.add('active');
+                prevBtn.addEventListener('click',prevSlider);
+                nextBtn.addEventListener('click',nextSlider);
+
+                function prevSlider(){
+                    slides[slideIndex].classList.remove('active');
+                slideIndex=(slideIndex===0) ? slides.length-1 : slideIndex-1;
+                slides[slideIndex].classList.add('active');
+                slider.style.transform=`translateX(-${slideIndex*100}%)`;
+
+                }
+                function nextSlider(){
+                slides[slideIndex].classList.remove('active');
+                slideIndex=(slideIndex===slides.length-1) ? 0 : slideIndex+1;
+                slides[slideIndex].classList.add('active');
+                slider.style.transform=`translateX(-${slideIndex*100}%)`;
+
+                }
+            </script>
+            <!-- script for typing name. -->
+            <script>
+                var typingEffect=new Typed(".c",{
+            strings: ["CodeWithUmar"],
+            loop:false,
+            typeSpeed:50,
+            //  backSpeed:80,
+            })
+            
+            var typingEffect=new Typed(".cc",{
+            strings: ["Java","Machine Learning","Data Science","Full Stack Web-Development","C Programming",
+                    "DSA","C++"],
+            loop:true,
+            typeSpeed:20,
+            backSpeed:55,
+            })
+            </script>
+        
+    
+
+
+
+
+
+
+
+
+
+    <!--  -->
+
+            <section class="ss">
+                <p class="rc">Recommended Courses</p>
+                    <div class="na">
+                        <div class="nav-course">
+                            <a href="https://youtube.com/playlist?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q"><img src="images/html yahoo.jpeg" alt=""/></a>
+                            <p class="pp">FREE COURSE</p>
+                            <h2 >Html For Beginners</h2>
+                            <p class="pp1">This latest JavaScript course comes with premium curriculum that covers everything from basics to advance. On top of that, you will get my handwritten notes of JS for completely free. What are you waiting for? Just Enroll Buddy</p>
+                            <a href="https://youtu.be/ntLJmHOJ0ME" class="bt">Start Watching</a>
+
+                        </div>
+                        <div class="nav-course">
+                            <a href="https://youtu.be/ntLJmHOJ0ME"><img src="images/yahoo logo.png" alt=""></a>
+                            <p class="pp">FREE COURSE</p>
+                            <h2>F-S Web-Developer For Beginners</h2>
+                            <p class="pp1">This latest JavaScript course comes with premium curriculum that covers everything from basics to advance. On top of that, you will get my handwritten notes of JS for completely free. What are you waiting for? Just Enroll Buddy</p>
+                            <a href="https://youtu.be/ntLJmHOJ0ME" class="bt">Start Watching</a>
+
+                        </div>
+                        <div class="nav-course">
+                            <a href="https://youtube.com/playlist?list=PL0b6OzIxLPbxStBQ21C2toa5uQMqHEoRT"><img src="images/java.jpeg" alt=""></a>
+                            <p class="pp">FREE COURSE</p>
+                            <h2>Java For Beginners</h2>
+                            <p class="pp1">This latest JavaScript course comes with premium curriculum that covers everything from basics to advance. On top of that, you will get my handwritten notes of JS for completely free. What are you waiting for? Just Enroll Buddy</p>
+                                <!-- <br><br> -->
+                                <a href="https://youtu.be/GpcMasRWUhI" class="bt">Start Watching</a>
+                            
+                        </div>
+                    </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->
+                         <section id="Testimonials">
+                            <h1>Testimonials</h1>
+                            <div class="na1">
+                                <div class="nav-course1">
+                                    <img src="images/qua.png" alt="">
+                                    <p class="tp">I don't have words to thank this man, I'm really grateful to have this channel and website in my daily routine. If you're a mere beginner, then you can trust this guy and can put your time into his content. I can assure you that it'll be worth it.</p>
+
+
+                                    <h2>Muhammad Umar</h2> 
+                                    <p> Web Developer</p>
+                                </div>
+                                <div class="nav-course1">
+                                    <img src="images/qua.png" alt="">
+                                    <p>For everyone who wants to level up their #Coding and #Dev skills - seriously, this channel is for you! Both basic and advanced stacks are covered on this channel, and one can learn according to his skill levels. 
+
+                                        <h2>Eisa Mohmood</h2>
+                                        <p> Web Developer</p>
+
+                                </div>
+                            </div>
+                            
+                        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        <footer id="foot">
+                <div class="footer-text">
+                    <img src="images/ab.jpeg" alt="">
+                    <h1 class="f1">CodeWithUmar</h1>
+                    <p class="ff">Copyright © 2023 CodeWithUmar.com</p>
+                
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/mudassir.mujahid.39?mibextid=ZbWKwL" title="Face-Book Page"  class="fb"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/MudassirMu26272?t=IGRYpX6C9TceVemfkjDEhw&s=09" title="Twitter Page"  class="tt"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://instagram.com/mudassirmujahid2?igshid=ZDdkNTZiNTM=" title="Insta-gram Page" class="in"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="tel: +92 345 1012043" title="Link Page" class="ww"><img src="images/phone.png" alt=""></a>
+                    </div>
+                </div>    
+        </footer> 
+    
+</body>
+</html>

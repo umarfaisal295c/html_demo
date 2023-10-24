@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        /* grid-template-columns: repeat(3, 1fr); */
+        align-items: center;
+        gap: 2rem;
+      }
+      .container .code {
+        position: relative;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem #323946;
+        overflow: hidden;
+        display: flex;
+        /* flex-wrap: wrap; */
+      }
+      .code img {
+        width: 100%;
+        transition: 0.5s ease;
+      }
+      .code .cwu-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0 ,0 ,0,.1) ,#0ef);
+    text-align: center;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}.code:hover .cwu-layer{
+    transform: translateY(0%);
+    
+}.cwu-layer h4{
+    font-size: 35px;
+    color: #fff;
+}
+.cwu-layer p{
+    font-size: 16px;
+    margin: .3rem 0 1rem;
+    color: #fff;
+}
+.cwu-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #0ef;
+    background: #fff;
+    text-decoration: none;
+}
+.cwu-layer a i{
+    font-style: 25px;
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="code">
+        <img src="images/web.jpg" alt="" />
+        <div class="cwu-layer">
+          <h4>Web Design</h4>
+          <p>
+            Web designers plan, create and code internet sites and web pages,
+            many of which combine text with sounds, pictures, graphics and video
+            clips
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="code">
+        <img src="images/web.jpg" alt="" />
+        <div class="cwu-layer">
+          <h4>Web Design</h4>
+          <p>
+            Web designers plan, create and code internet sites and web pages,
+            many of which combine text with sounds, pictures, graphics and video
+            clips
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+      <div class="code">
+        <img src="images/web.jpg" alt="" />
+        <div class="cwu-layer">
+          <h4>Web Design</h4>
+          <p>
+            Web designers plan, create and code internet sites and web pages,
+            many of which combine text with sounds, pictures, graphics and video
+            clips
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

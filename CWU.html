@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       #Wrapper{
+        border: 0px solid black;
+        margin: 0 auto;
+        width: 1000px;
+        
+       }
+       #header{
+        background-color: red;
+        height: 100px;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0 0 0;
+        color: aliceblue;
+       }
+       .xyz{
+        background: yellow;
+       }
+       #About{
+        background-color: aqua;
+       }
+       #About li{
+        display: inline;
+       }
+       #About ul{
+        padding: 0;
+        margin: 0;
+        padding: 10px;
+       }
+       #About li a{
+        padding: 10px 13px;
+        text-decoration: none;
+       }
+       #About li a:hover{
+        background-color: pink;
+        color: aliceblue;
+       }
+       #content{
+        width: 800px;
+        float: left;
+        min-height: 350px;
+        padding: 10px;
+        box-sizing: border-box;
+       }
+       #side {
+        margin: 0;
+        padding: 0;
+        min-height: 350px;
+        background-color:gainsboro;
+        width: 200px;
+        display: block;
+        float: right;
+
+       }
+       #side a{
+       
+       text-decoration: none;
+
+
+       }
+       #footer{
+        background-color: pink;
+        clear: both;
+        text-align: right;
+        padding: 5px 10px;
+       }
+       @media screen and (max-width:1010px) {
+        #Wrapper{
+            width: 800px;
+        }
+        #content{
+            width: 80%;
+        }
+        #side{
+            width: 18%;
+        }
+       }
+       @media screen and (max-width:810px) {
+        #Wrapper{
+            width: 510px;
+        }
+        #content{
+            width: 65%;
+        }
+        #side{
+            width: 34%;
+        }
+       }
+       @media screen and (max-width:500px) {
+        #Wrapper{
+            width: auto;
+        }
+        #content{
+            width: 100%;
+            float: none;
+            font-size: 35px;
+        }
+        #side{
+            width: 100%;
+            float: none;
+        }
+       }
+    </style>
+</head>
+<body>
+  <div id="Wrapper">
+    <div id="header">
+        <h1>Code With Umar</h1>
+    </div>
+    <div id="About">
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada dui at augue hendrerit, vulputate tincidunt libero pretium. Cras rhoncus, ex a ullamcorper interdum, arcu mi lacinia lectus, sit amet pulvinar velit est sit amet nisl. Aenean in vulputate turpis, at tincidunt arcu. Praesent eget sagittis leo. Aenean quis aliquet velit. Sed tempus nibh sed metus pharetra dignissim. Aenean ullamcorper, massa a tincidunt rhoncus, ex lorem feugiat arcu, ac ultricies mauris diam ac dolor. Fusce finibus dolor quam, sit amet ultricies odio tincidunt eu. Sed sollicitudin dui nec malesuada mollis. Integer ex velit, volutpat sit amet blandit non, placerat facilisis nunc. Praesent in hendrerit quam, sit amet ultrices felis.</p>
+    </div>
+    <div id="side">
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </div>
+    <div id="footer">
+        CodewithUmar @2023
+    </div>
+  </div>
+  <script src="Java Script/">
+    // let element;
+    // document.getElementById("header").addEventListener("click",abc);
+    // function abc(){
+    //     document.getElementById("header").classList.toggle("xyz");
+    // }
+  </script>
+</body>
+</html>

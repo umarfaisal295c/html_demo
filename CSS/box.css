@@ -1,0 +1,14 @@
+.bb{
+    
+    border:2px  solid red;
+    width:500px;
+    padding:100px;
+    box-sizing: border-box;
+    font-size:15px ;
+       
+
+
+}
+body{
+    background-color: aqua;
+}

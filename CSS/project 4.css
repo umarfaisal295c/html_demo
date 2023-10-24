@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0 ;
+}
+header{
+    display: flex;
+    background: #1f242d;
+    margin: 0px 0 0 0;
+    padding: 20px;
+    align-items: center;
+}
+#nav-items a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+    color: #fff;
+    transition: 1s;
+}
+#nav-items a:hover,
+#nav-items a.active{
+    color: #0ef;
+}
+.logo{
+    margin:0 auto;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 9px 9px 40px #0ef;
+}
+.logo span{
+    color: transparent;
+    animation: ring 0.5s ease infinite;
+    animation-delay: calc(0.3s * var(--i));
+}
+@keyframes ring{
+    0%{
+        color:#e45c00;
+    }
+    50%{
+        color: #18b201;
+    }
+    100%{
+        color: #0ef;
+    }
+}
+.social-media a{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0ef;
+    display: inline-flex;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #0ef;
+    font-size: 20px;
+    transition: 1s;
+}
+.social-media a:hover{
+    background: #0ef;
+    color: #1f242d;
+}
+
+/* Nav items ki css complete hu gi hai  */
+
+/* Ab baki ki css start hu gi  */
+#main{
+    display: flex;
+}
+aside{
+    flex: 0 0 15vw;
+    background: beige;
+    padding: 10px;
+}
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+aside ul a{
+    text-decoration: none;
+    border-bottom: 1px solid #1f242d;
+    display: block;
+    color: black;
+    padding: 10px;
+}
+aside img{
+    width: 100%;
+}
+article{
+    padding: 10px;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services-box{
+    border: 1px solid #eee;
+    padding: 10px;
+    flex-basis: 25%;
+    min-width: 370px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+}
+.services-box img{
+    width: 100%;
+}
+.call {
+    align-self: flex-start;
+    margin-top: auto;
+}
+.call a{
+    background: #1f242d;
+    color: #0ef;
+    padding: 8px 13px;
+    text-decoration: none;
+    transition: 1s;
+    display: block;
+}
+.call a:hover{
+    background: #0ef;
+    color: black;
+    box-shadow: 0 0 30px #1f242d;
+}
+footer{
+    background: #1f242d;
+    color: #0ef;
+    padding: 15px 0;
+    text-align: center;
+    font-style: 25px;
+    font-weight: 700;
+}
+@media screen and (max-width:850px){
+    .services-box{
+        flex-basis: 48%;
+    }
+    aside{
+        flex: 0 0 25vw;
+    }
+}
+@media screen and (max-width:600px){
+    header{
+        flex-direction: column
+    }
+    .logo{
+        order: -1;
+        padding-bottom: 5px;
+    }
+    #nav-items{
+        padding-bottom: 10px;
+    }
+    .social-media {
+        padding-top: 5px;
+    }
+    #main{
+        flex-direction: column;
+    }
+    article{
+        order: -1;
+    }
+}

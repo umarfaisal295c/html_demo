@@ -1,0 +1,396 @@
+/* @import url(style.css); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#head{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    /* margin: 0px; */
+
+}
+:root{
+       --a1-color:#ffff;
+    --a2-color:#7e22ce;
+    --a3-color:#000;
+    --a4-color:#000;
+    --a5-color:#7e22ce;
+    --a6-color:#7e22ce;
+    --a7-color:#ffff;
+
+    --a8-color:#ffff;
+    --a9-color:#7e22ce;
+    --a10-color:#7e22ce;
+    --a11-color:#7e22ce;
+    --a12-color:#7e22ce;
+
+    --a13-color:#7e22ce;
+    --a14-color:#7e22ce;
+    --a15-color:#000;
+    --a16-color:#000;
+    --a17-color:#000;
+    --a18-color:#111827;
+    --a19-color:#ffff;
+    --a20-color:#d1d5db;
+    --a21-color:#000;
+
+    --a22-color:#000;
+    --a23-color:#ffff;
+    --a24-color:#0000;
+    --a25-color:#111827;
+    --a26-color:#374151;
+    --a27-color:#7e22ce;
+    --a28-color:#ffff;
+
+    --a29-color:#ffff;
+    --a30-color:#111827;
+    --a31-color:transparent;
+    --a32-color:#d1d5db;
+    --a33-color:#111827;
+    --a34-color:#6b7280;
+
+    --a35-color:#ffff;
+    --a36-color:#000;
+    --a37-color:#6b7280; 
+}
+.dark-theme{
+  
+    --a1-color:#111827;
+    --a2-color:#d8b4fc;
+    --a3-color:#ffff;
+    --a4-color:#ffff;
+    --a5-color:#d8b4fc;
+    --a6-color:#7e22ce;
+    --a7-color:#ffff;
+
+    --a8-color:#111827;
+    --a9-color:#d8b4fc;
+    --a10-color:#d8b4fc;
+    --a11-color:#d8b4fc;
+    --a12-color:#ffff;
+
+    --a13-color:#9333ea;
+    --a14-color:#9333ea;
+    --a15-color:#ffff;
+    --a16-color:#ffff;
+    --a17-color:#9ca3af;
+    --a18-color:#f3f4f6;
+    --a19-color:#4b5563;
+    --a20-color:#d1d5db;
+    --a21-color:#111827;
+    
+    --a22-color:#9333ea;
+    --a23-color:#334151;
+    --a24-color:#9ca3af;
+    --a25-color:#ffff;
+    --a26-color:#9ca3af;
+    --a27-color:#7e22ce;
+    --a28-color:#ffff;
+    
+    --a29-color:#111827;
+    --a30-color:#933eaf;
+    --a31-color:transparent;
+    --a32-color:#374151;
+    --a33-color:#ffff;
+    --a34-color:#d1d5db;
+
+    --a35-color:#1f2937;
+    --a36-color:#e5e7eb;
+    --a37-color:#9ca3af;
+  
+    
+}
+
+
+
+
+
+
+
+/* yh header pory head ko control kr rha hai */
+
+/* text yh CodeWithUmar */
+header{
+    width: 100%;
+    /* height: 20px; */
+    padding: 20px 11px ;
+   /* margin-bottom:5px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--a1-color);
+    
+   
+}
+/* text yh CodeWithUmar */
+#CWU a{
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--a2-color);
+    /* border: 2px solid red; */
+    margin: 0px 16px;
+    padding: 0px 0px 0px 16px;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* yh nav-items ky links ko control kr rha hai */
+#nav-items{
+    margin-left: 300px;
+}
+/* all link in this nav-items */
+#nav-items a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 4px;
+    
+    /* margin-right: 15px; */
+    color: var(--a3-color);
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+/* yh moon icon ki css hai */
+#icon {
+    /* position: absolute;
+    top:22px;
+    left:1110px; */
+    color:var(--a4-color);
+    font-size: 39px;
+    font-weight: 900;
+}
+/* yh nav-items ka hover hai */
+#nav-items a:hover{
+    color: var(--a5-color);
+    text-decoration: underline;
+    transform: translateY(-8px);
+}
+/* yh login & signup ki css hai */
+#btnn{
+    margin-right: 20px;
+}
+.btn{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    background: var(--a6-color);
+    color: var(--a7-color);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 12px;
+    margin: 8px 4px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.btnS{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    background: var(--a6-color);
+    color: var(--a7-color);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 12px;
+    margin: 8px 4px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+/* yh  login & signup ka hover hai*/
+.btn:hover{
+    background: var(--a6-color);
+    color: var(--a1-color);
+    
+}
+
+
+.om{
+    width: 50px;
+    position: relative;
+}
+section{
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--a8-color);
+    margin: 0px 0px;
+}
+#home-icon{
+    margin: 0px 0px 0px 0px;
+    padding-right: 100px;
+}
+.searchBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchText{
+    width: 200px;
+    padding: 6px;
+    border-radius: 18px;
+    /* border: none; */
+    outline: none;
+
+}
+.searchText:focus{
+    outline: none;
+}
+.searchBtn{
+    width: 2rem;
+    height: 2rem;
+    /* background: #000;
+    color: red; */
+    position: absolute;
+    right: 0rem;
+    /* left: 14rem; */
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+.searchText::placeholder{
+    color: blueviolet;
+    font-size: 20px;
+}
+input.searchText{
+    font-size: 20px;
+}
+.bxs-home{
+    color: var(--a9-color);
+    font-size: 25px;
+    font-weight: 900;
+}
+ 
+.bx-search-alt-2{
+    color: var(--a10-color);
+    font-size: 25px;
+    font-weight: 900;
+    /* margin-left: 300px; */
+    /* padding-left: 350px; */
+}
+#nav-items2{
+    /* margin-left: 300px; */
+    margin: 0px 100px 0px 150px;
+}
+
+#nav-items2 a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 11px;
+    /* margin: 8px 2px; */
+    
+    /* margin-right: 15px; */
+    color: var(--a11-color);
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+#nav-items2 a:hover{
+    color:var(--a12-color);
+    text-decoration: underline;
+    transform: translateY(-8px);
+}
+.hr{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+    text-decoration-line: underline;
+}
+
+.dropdown{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pc{
+    
+    font-size:30px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#7e22ce ;
+    text-align: center;
+    padding-top: 32px;
+    margin-top: 150px;
+}
+.container{
+    /* position: relative; */
+    top: 50px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.nav-course{
+    max-width: 400px;
+    height: 520px;
+    background:  #f2f2f2;
+    border-radius: 15px;
+    padding: 18px ;
+}
+
+.nav-course img{
+    width: 370px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+.pp{
+    text-align: center;
+    color: #4b5563;
+    font-size: 15px;
+}
+.h22{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.pp1{
+    text-align: justify;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.bt{
+    margin-top: 15px;
+
+}
+a.bt{
+    text-decoration: none;
+    background: #7e22ce;
+    padding: 8px;
+    border-radius: 40px;
+    color: #ffff;
+
+}
+.mc{
+    font-size:30px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#7e22ce ;
+    text-align: center;
+    padding-top: 52px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}

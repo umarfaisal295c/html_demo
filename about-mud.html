@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #323946;
+    
+}
+header{
+    /* position: fixed; */
+    width: 100%;
+    padding: 15px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: #000;
+    
+}
+.logo{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 40px #0ef;
+    cursor: pointer; 
+}
+.logo span{
+    color: transparent;
+    
+}
+@keyframes ring{
+    0%{
+        color:#e45c00;
+    }
+    50%{
+        color: #18b201;
+    }
+    100%{
+        color: #0ef;
+    }
+}
+
+.nav-items a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 35px;
+    text-decoration: none;
+    color:#fff;
+    transition: 1s;
+}   
+.nav-items a:hover,
+.nav-items a.active{
+    color: #0ef;
+}
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #323946; */
+    
+    
+    min-height: 100vh;
+    animation: slideRigth 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+@keyframes slideRigth{
+    0%{
+        /* transform: translateX(-100px); */
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.about-img{
+    padding-left: 50px;
+}
+.about-img img{
+    width: 22vw;
+    border-radius: 70px;
+    height: 27vw;
+    transition: 0.4s ease;
+}
+.about-img:hover img{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #0ef;
+
+}
+.content{
+    padding: 30px;
+}
+.content h2{
+    color: #fff;
+    font-size: 70px;
+    letter-spacing: 1.5px;
+    padding-left:10;
+    padding-bottom: 20px;
+    text-align: left;
+    /* line-height: 1.2; */
+}
+.content span{
+    color: #0ef;
+}
+.content h3{
+    color: #fff;
+    padding: 20px 10px 0px 10px;
+    font-size: 30px;
+    text-align: left;
+}
+.content p{
+    margin: 20px;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 10px 18px 10px;
+    text-align: justify;
+    /* padding-bottom: 15px; */
+}
+.btn{
+    font-size: 25px;
+    font-weight: 600;
+    color: #0ef;
+    text-decoration: none;
+    border: 2px solid #0ef;
+    padding: 12px 28px;
+    border-radius: 40px;
+    transition: 1s;
+}
+.btn:hover{
+    color: black;
+    background: #0ef;
+    box-shadow: 0 0 40px #0ef;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" title="Mudassir Electrical Engineer">MEE <span style="--i:1">.<span style="--i:2">.<span style="--i:3">.</span></span></span></div>
+        
+        <div class="nav-items">
+            <a href="umar.html" class="active" title="Home Page">Home</a>
+            <a href="about-mud.html" title="About Page">About</a>
+            <a href="our ser-mud.html" title="About Mudassir Mujahid">Our Services</a>
+            <a href="con-mud.html" title="Contact Us">Contact Us</a>
+            <a href="login page.html" title="Login Page">Login</a>
+        </div>
+        
+    </header>
+    <section class="about" style="--i:1" >
+        <div class="about-img">
+            <img src="images/mudassir 1.jpeg" alt="">
+        </div>
+        <div class="content">
+            <h2 class="heading">About<span>  Me..</span></h2>
+            <h3>Electrical Engineer</h3>
+            <p>Electrical engineers create, design and manage electricity to help power the world. They are problem-solvers who study and apply the physics and mathematics of electricity, electromagnetism and electronics to both large- and small-scale systems to process information and transmit energy.</p>
+            <a href="#" class="btn" title="Read About Mudassir Mujhid">Read More</a>
+            
+        </div>
+    </section>
+</body>
+</html>

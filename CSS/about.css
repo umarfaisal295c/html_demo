@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0,0,0.1), rgba(0, 0,0,0.9)) ,url('../images/aboutim.jpg');
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.testi{
+    padding: 30px 100px;
+}
+article h1{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    animation: sample 2s ;
+    transition: 1s;
+}
+@keyframes sample{
+    0%{
+        text-shadow: 0 0 25px #0ef;
+    animation-direction: alternate;
+    font-size: 25px;
+    font-weight: 700;
+    }
+    100%{
+        font-size: 55px;
+        text-shadow: 0px 0pX 60px #0ef;
+        font-weight: 700;
+    }
+}
+article img{
+    height: 250px;
+    width: 250px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    margin-top: 50PX;
+}
+blockquote{
+    font-size: 20PX;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+ article h5{
+    font-size: 25px ;
+    font-weight: 700;
+    color: #0ef;
+    margin-top: 20px;
+ }
+ .btn{
+    font-size: 30px ;
+    font-weight: 700;
+    background-color:  #1f242d;
+    color: #0ef;
+    padding: 12px 28px;
+    border: 1px solid #0ef;
+    border-radius: 40px;
+    transition: 1s;
+    margin-top: 10px;
+    margin-left: -800px;
+ }
+ .btn:hover{
+    background: #0ef;
+    color: black;
+    box-shadow: 0 0 40px #0ef;
+ }

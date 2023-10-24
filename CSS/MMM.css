@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../images/sun.avif');
+    background-repeat: none;
+    background-size: cover;
+}
+.container{
+}
+.content{
+    background: rgba(121, 145, 91, 0.43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    padding: 50px 30px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.logo span{
+    font-size: 19px;
+    font-weight: 100;
+}
+nav{
+    padding: 40px 25px;
+}
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+}
+nav li a{
+    color:black;
+    text-decoration: none;
+    transition: 0.6s;
+
+}
+nav .active,
+nav :hover{
+    color: #0ef;
+}
+section{
+    display: flex;
+    margin-left: 180px;
+    width: 400px;
+    background: rgba(121, 145, 91, 0.43);
+    margin-top: 150px;
+    
+}
+.about-img{
+    height: min-content;
+    padding-right: 60px;
+    padding-top: 30px;
+    /* background-color: #fee6c4; */
+
+}
+.about-img img{
+    width: 12vw;
+    border-radius: 50%;
+    height: 12vw;
+    margin: 10px 110px;
+    border: 9px solid #000;
+}
+.about-img .name{
+    text-align: center;
+    padding-left: 6px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+.about-img .nn{
+    font-size: 19px;
+    font-weight: 100;
+    text-align: center;
+    color: #000;
+    padding-top: 30px;
+    padding-left: 6px;
+    padding-bottom: 20px;
+}
+.social-media{
+    padding-top: 25px;
+    background: rgba(7, 15, 10,0.6);
+    width: 400px;
+}
+.social-media a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    /* border: 2px solid #0ef; */
+    border-radius: 40px;
+    margin: 0px 30px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #0ef;
+    transition: 1s;
+}
+.social-media a:hover{
+    color: black;
+    background: #0ef;
+    box-shadow: 0 0 40px #0ef;
+}
+.social-media .fb{
+    color: #0ef;
+}
+a.fb:hover{
+    color: #fff;
+    background: #3b5998;
+    box-shadow: 0 0 50px #3b5998;
+
+}
+.social-media .tt{
+    color: #0ef;
+}
+a.tt:hover{
+    color: #fff;
+    background: #00acee;
+    box-shadow: 0 0 40px  #00acee ;
+}
+.social-media .in{
+    color: #0ef;
+    transition: 0.5s;
+}
+a.in:hover{
+    background: linear-gradient(135deg,#e91e63,#673ab7);
+    color: #fff;
+    box-shadow:0 0 30px #e91e63;
+
+}
+.social-media .ww{
+    color: #0ef;
+}
+a.ww:hover{
+    background: #25D366;
+    color: #fff;
+    box-shadow: 0 0 30px #25D366;
+}

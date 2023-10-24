@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    animation: slideRigth 2s ease forwards;
+            animation-delay: calc(.2s * var(--i));
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url('../images/ele.jpg');
+    flex-direction: column;
+    background-size: cover;
+}
+form{
+    display: flex;
+    width: 90%;
+    background: transparent;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3{
+    font-size: 30px;
+    font-weight: 800;
+    color:#0ef ;
+    margin-bottom: 20px;
+    text-align: center
+}
+form input, form textarea{
+    border: 0;
+    outline: none;
+    margin: 10px 0;
+    padding: 20px;
+    font-size: 19px;
+    background: #f5f5f5;
+    caret-color: #0ef;
+    resize: none;
+}
+form input, form textarea::placeholder{
+    /* color: black; */
+    font-size: 25px;
+    
+}
+
+form button{
+    padding: 15px;
+    /* padding-top: 15px; */
+    width: 50%;
+    margin-left: 112px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background: #ff5361;
+    transition: 1s;
+}
+form button:hover{
+    border-radius: 60px;
+    background: #0ef;
+    color: #555;
+}
+@keyframes slideRigth{
+    0%{
+        /* transform: translateX(-100px); */
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+<body> 
+    <section>
+        <form action=""  >
+            <h3>Get In Touch</h3>
+            <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="">
+            <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email" required="">
+            <!-- <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email" required=""> -->
+            <input type="number" class="form-control" name="Number" id="Number" placeholder="Phone Number" required="">
+            <textarea name="Message" id="Message" class="form-control" required="" placeholder="Message" ></textarea>
+            <button type="submit" onclick="Mail()">Send</button>
+        </form>
+    </section>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+
+
+
+    function Mail(){
+
+            let name= document.getElementById("Name").value;
+            let email= document.getElementById("Sender").value;
+            // let subject= document.getElementById("Subject").value;
+            let message= document.getElementById("Message").value;
+            let num= document.getElementById("Number").value;
+
+        Email.send({
+    // Host : "smtp.elasticemail.com",
+    // Username : "codewithumar295c@gmail.com",
+    // Password : "A11E6BD6B3DDC9A16329D70CCD6AF85C2311",
+    SecureToken:"ce1e815e-d31a-49a8-b4ac-12341da4a5a9 ",
+    To : 'mudassirmujahid2@gmail.com',
+    From : "codewithumar295c@gmail.com",
+    Subject : "Mail from Contact Form",
+    Body : "Name: " +name+ "<br/>Sender: " + email +  "<br/> Message: " +message+ "<br/> Number: " +num 
+}).then(
+  message => alert(message)
+);
+    }
+    // mudassirmujahid2@gmail.com
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="CSS/style2.css">
+
+    <title>Free Courses</title>
+</head>
+<body class="">
+    <div id="head">
+        <header>
+            <div id="CWU"><a href="index.html">CodeWithUmar</a></div>
+            <div class="dp">
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Menu</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Courses</li> </a>     
+                        <li class="hower">Tutorial
+                        <div class="caret"></div>
+
+                            <ul>
+                                <li>C++</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>Java</li>
+                                <li>javaScript</li>
+                                <li>Rect JS</li>
+                                <li>PYTHON</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                        </li>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="#"><li>My Gear</li></a>
+                        <a href="#"><li> Notes</li></a>
+                        <a href="#"><li> Work With Us</li></a>
+                        
+                    </ul>
+                </div>
+            </div>
+            <script>
+                const dropdowns=document.querySelectorAll('.dropdown');
+                dropdowns.forEach(dropdown => {
+                    const select=dropdown.querySelector('.select');
+                    const caret=dropdown.querySelector('.caret');
+                    const menu=dropdown.querySelector('.menu');
+                    const options=dropdown.querySelectorAll('.menu li');
+                    const selected=dropdown.querySelector('.selected');
+
+                    select.addEventListener('click',()=>{
+                        select.classList.toggle('select-clicked');
+                        caret.classList.toggle('caret-rotate');
+                        menu.classList.toggle('menu-open');
+                    })
+
+                    options.forEach(option => {
+                        option.addEventListener('click',()=>{
+                            selected.innerText=option.innerText;
+                            select.classList.remove('selected-clicked');
+                            caret.classList.remove('caret-rotate');
+                            menu.classList.remove('menu-open');
+
+                            // option.forEach(option=>{
+                            //     option.classList.remove()
+                            // })
+                        })
+                    })
+                });
+            </script>
+            <div id="nav-items">
+                <a href="index.html">Home</a>
+                <a href="index2.html">Courses</a>
+                <a href="">Tutorial</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+                <a href="">My Gear</a>
+                <a href="">Notes</a>
+                <a href="">Work With Us</a>
+                <!-- <a href=""><i class='bx bx-moon'></i></a> -->
+            </div>
+            <i class='bx bxs-moon' id="icon" ></i>
+            
+            <script>
+                // let icon = document.getElementById("icon");
+                // icon.onclick = function(){
+                //     document.body.classList.toggle("dark-theme");
+                    let icon;
+                    document.getElementById("icon").addEventListener("click",function(){
+                        document.body.classList.toggle("dark-theme");
+                    })
+                    // if(document.body.classList.contains("dark-theme")){
+                    //     icon.src="icon" ;
+                    // }else{
+                    //     icon.src="images/sun.png" ;
+                        
+                    // }
+                
+            </script>
+            <div id="btnn"> 
+                <a href="index3.html" class="btn">Login</a>
+                <a href="" class="btnS">Signup</a>
+            </div>
+            
+
+            
+        </header>
+    
+    <hr color="#d1d5db">
+
+
+
+
+    <section>
+        <div id="home-icon"><a href="index.html"><i class='bx bxs-home'></i></a></div>
+        <div id="nav-items2">
+            <a href=""> HTML</a>
+            <a href="">CSS</a>
+            <a href="">JS</a>
+            <a href="">C</a>
+            <a href="">C++</a>
+            <a href="">JAVA</a>
+            <a href="">PYTHON</a>
+            <a href="">REACT JS</a>
+            
+        </div>
+        <div class="searchBox">
+            <input type="text" class="searchText" placeholder="Search">
+            <div  class="searchBtn">
+                <i class='bx bx-search-alt-2'></i>
+
+            </div>
+        </div>
+        <script>
+            let search=document.querySelector(".bx-search-alt-2")
+            search.onclick=function(){
+                document.querySelector(".container").classList.toggle("active");
+            }
+        </script>
+        
+        </section>
+    <hr class="hr" color="#d1d5db">
+
+    </div>
+</div>  
+    <p class="pc">Primium Courses</p>
+    <div class="container">
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PL0b6OzIxLPbx-BZTaWu_AF7hsKo_Fvsnf"><img src="images/js images.jpeg" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">JavaScript For Beginners</h2>
+            <p class="pp1">This latest JavaScript course comes with premium curriculum that covers everything from basics to advance. On top of that, you will get my handwritten notes of JS for completely free. What are you waiting for? Just Enroll Buddy</p>
+            <a href="https://youtu.be/Lgxgm-T9cgA" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PL0b6OzIxLPbxStBQ21C2toa5uQMqHEoRT"><img src="images/html5.png" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">HTML5 For Beginners</h2>
+            <p class="pp1">This is one of my favorite courses. In this series, you'll learn about HTML and HTML5. In this course we learn complete HTML tags and make projects in HTML5. The course is very important in web-development with out HTML you will not become a web-developer . </p>
+            <a href="https://youtu.be/GpcMasRWUhI" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PL0b6OzIxLPbzDsI5YXUa01QzxOWyqmrWw"><img src="images/css-tutorial.jpg" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">CSS For Beginners</h2>
+            <p class="pp1">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).</p>
+            <a href="https://youtu.be/TThZIt4r3eg" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg"><img src="images/python.jpeg" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">Python For Beginners</h2>
+            <p class="pp1">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).</p>
+            <a href="https://youtu.be/7wnove7K-ZQ" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt"><img src="images/recet images.jpeg" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">React Js  For Beginners</h2>
+            <p class="pp1">This is one of my favorite courses. In this series, you'll learn about React Js. React is a free and open-source front-end JavaScript library. This series will cover React from starting to the end. We will learn react from the ground up!</p>
+            <a href="https://youtu.be/-mJFZp84TIY" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PLV3C-t_tgjGFyXP_-AF37AoIuxM9jzELM"><img src="images/arduino.jpeg" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">Arduino Programming For Beginners</h2>
+            <p class="pp1">Anduino Development is one of the booming career options nowadays, and many people are learning Android because it feels so good to create own app. You can also grab this opportunity by enrolling in this course.</p>
+            <a href="https://youtu.be/PzJayPUPV6A" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PL0b6OzIxLPbyrzCMJOFzLnf_-_5E_dkzs"><img src="images/php.jpeg" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">PHP For Beginners</h2>
+            <p class="pp1">This is one of my favorite courses.This is one of the best applications of PHP and Jquery. In this series, we've developed a real-time chatroom, so if you're someone who likes project-based learning, this is for you.</p>
+            <a href="https://youtu.be/a_qREkJ78f4" class="bt">Start Watching</a>
+        </div>
+    </div>
+
+    <p class="mc">More Courses</p>
+    <div class="container">
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q"><img src="images/java1.png" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">Java For Beginners</h2>
+            <p class="pp1">This is one of my favorite courses.If you don't know programming and want to start your career by learning Java as your first language, you can start with this course as it is for absolute beginners.</p>
+            <a href="https://youtu.be/ntLJmHOJ0ME" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtu.be/HME2SrWWSYk"><img src="images/c++.png" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">C++ For Beginners</h2>
+            <p class="pp1">This is one of my favorite courses.This course contains all the concepts and exercises of the C++ language. If you're a mere beginner, you can start your coding journey with this course and ace your exams.</p>
+            <a href="https://youtu.be/HME2SrWWSYk" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtu.be/mXjZQX3UzOs"><img src="images/app deve.png" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">App Development For Beginners</h2>
+            <p class="pp1">Android Development is one of the booming career options nowadays, and many people are learning Android because it feels so good to create own app. You can also grab this opportunity by enrolling in this course.</p>
+            <a href="https://youtu.be/mXjZQX3UzOs" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR"><img src="images/c.png" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">C Programming For Beginners</h2>
+            <p class="pp1">This is one of my favorite courses.Even if you don't know the ABC of coding, start this course, and I can assure you that you'll be an intermediate-level coder after completion. Get started with C language.            </p>
+            <a href="https://youtu.be/7Dh73z3icd8" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi"><img src="images/data.jpeg" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">Data Structure For Beginners</h2>
+            <p class="pp1">This is one of my favorite courses.Data Structure and Algorithm is one of the most crucial things to learn. This course will give you a complete understanding of Data Structure and its implementation.</p>
+            <a href="https://youtu.be/5_5oE5lgrhw" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtu.be/itB6VsP5UnA"><img src="images/game.jpeg" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">Python Game Development Tuts</h2>
+            <p class="pp1">This is one of my favorite courses.If you're interested in game development, this course is for you. It will lead you through all the basic game development concepts and will give you an initial boost.</p>
+            <a href="https://youtu.be/itB6VsP5UnA" class="bt">Start Watching</a>
+        </div>
+        <div class="nav-course">
+            <a href="https://youtube.com/playlist?list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi"><img src="images/github.jpeg" alt=""></a>
+            <p class="pp">FREE COURSE</p>
+            <h2 class="h22">Git and GitHub Tutorials For Beginners</h2>
+            <p class="pp1">This is one of my favorite courses. If you're serious about coding and want to make a career out of it, then do learn Git and GitHub because it is something that you'll use at every phase of your job.</p>
+            <a href="https://youtu.be/evknSAkUIvs" class="bt">Start Watching</a>
+        </div>
+    </div>
+
+</body>
+</html>

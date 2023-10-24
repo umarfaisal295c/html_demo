@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #1f293a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+div a{
+    font-size:70px ;
+    font-weight: 800;
+    text-decoration: none;
+    color: #0ef;
+    letter-spacing: 2px;
+    padding: 50% 0;
+    transition: 1s;
+    
+}       
+div a:hover{
+    background-image: url('../images/ab.jpeg');
+    border: 2px solid #0ef;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* font-size: 90px;
+    font-weight: 900; */
+    /* text-decoration: underline; */
+    /* color: blueviolet; */
+    /* color: greenyellow; */
+    box-shadow: 0 0 40px #0ef;
+
+}
+div b{
+    color: #fff;
+
+}
+div b:hover{
+    color: #0ef;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.container span{
+    position: absolute;
+    width: 32px;
+    height: 8px;
+    background: #2c4766;
+    left: 0;
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.0) rotate(calc(var(--i)*
+     360deg /50 ));
+     animation: animationblink 2s linear infinite;
+     animation-delay: calc(var(--i ) * (2s / 50));
+
+}
+@keyframes animationblink{
+    0%{
+        background:blueviolet;
+    }
+    25%{
+        background:#fff;
+    }
+    50%{
+        background:#0ef;
+    } 
+    70%{
+        background:yellowgreen;
+    }
+   
+}

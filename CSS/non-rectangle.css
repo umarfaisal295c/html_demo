@@ -1,0 +1,45 @@
+@import "dark mode.html";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+section .container{
+    min-width: 1000px;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vh;
+    height: 100vh;
+    background: #008dff;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) scale(4);
+}
+section .container h2{
+    font-size: 3em;
+    color: #fff;
+}
+section .container p{
+    font-size: 1.2em;
+    color: #fff;
+}

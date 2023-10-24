@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/weather.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather App</title>
+</head>
+<body>
+    <div  class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter City Name"
+            class="input-box" >
+            <button><i class='bx bx-search'></i></button>
+        </div>
+        <div class="weather-body">
+            <img src="images/cloud.png" alt="">
+            <div class="weather">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">Light Rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class='bx bx-droplet'></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class='bx bx-wind'></i>
+                    <div class="text">
+                        <span id="wind-speed">12km/H</span>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/031217357b.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+            margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: #1f242d;
+            
+         }
+ header{
+    /* position: fixed; */
+    width: 100%;
+    padding: 15px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    
+}
+.logo{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 40px #0ef;
+    cursor: pointer; 
+}
+.logo span{
+    color: transparent;
+    
+}
+@keyframes ring{
+    0%{
+        color:#e45c00;
+    }
+    50%{
+        color: #18b201;
+    }
+    100%{
+        color: #0ef;
+    }
+}
+
+.nav-items a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 35px;
+    text-decoration: none;
+    color:#fff;
+    transition: 1s;
+}   
+.nav-items a:hover,
+.nav-items a.active{
+    color: #0ef;
+} 
+
+#contact .content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    /* margin-bottom: 50px; */
+    margin: 40px 0;
+    /* background: #2e2f34; */
+    animation: slideRigth 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+
+#contact .content a{
+    background: #2e2f34;
+    height: 110px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: 1s;
+    opacity: 0.8;
+    margin-left: 50px;
+
+}
+#contact .content a:hover{
+    /* background: #30fe6c; */
+    opacity: 1;
+
+    transform: scale(1.1);
+    border: 2px solid #0ef;
+}
+#contact .content a img{
+    /* color: #30fe6c; */
+    font-size: 1em;
+    width: 60px;
+    opacity: 0.5;
+    /* margin-right: 10px; */
+    transition: 0.7s;
+    padding: 10px;
+}
+#contact .content a:hover img{
+    /* background: #30fe6c; */
+    transform: scale(1.1);
+    opacity: 1;
+}
+.secText{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    animation: slideRigth 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.secText span{
+    color: #0ef;
+    font-size: 1.2em;
+}
+.secText h2{
+    font-size: 3em;
+    color: #fff;
+    margin-top: 90px;
+}
+.secText p{
+    max-width: 700px;
+    text-align: center;
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: -50px;
+}
+@keyframes slideRigth{
+    0%{
+        /* transform: translateX(-100px); */
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" title="Mudassir Electrical Engineer">MEE <span style="--i:1">.<span style="--i:2">.<span style="--i:3">.</span></span></span></div>
+        
+        <div class="nav-items">
+            <a href="umar.html" class="active" title="Home Page">Home</a>
+            <a href="about-mud.html" title="About Page">About</a>
+            <a href="our ser-mud.html" title="About Mudassir Mujahid">Our Services</a>
+            <a href="con-mud.html" title="Contact Us">Contact Us</a>
+            <a href="login page.html" title="Login Page">Login</a>
+        </div>
+    </header>
+    <scetion id="contact" style="--i:1">
+        <div class="secText">
+            <h2>Ways <span>To  Contact</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi officiis natus harum totam error neque cupiditate fugit labore quidem libero illo accusantium, voluptatem quas dicta. Quibusdam rem et molestiae facere! Dolorem sunt ducimus culpa sapiente quod facilis nihil odit, consectetur dolore alias in ex reprehenderit, fuga laborum aliquid quis. Enim?</p>
+
+        </div>
+        <div class="content">
+            <a href="map.html"><img src="images/email.png" alt="">mudassirmujahid2@gmail.com</a>
+            <a href="tel:+92 342 0752472"><img src="images/phone.png" alt="">+92 342 0752472</a>
+            <a href="https://goo.gl/maps/weumv63oMtemQ8xWA"><img src="images/location.png" alt=""> Location</a>
+            <a href="#"><img src="images/whatsapp.png" alt=""> what's app</a>
+        </div>
+    </scetion>    
+</body>
+</html>

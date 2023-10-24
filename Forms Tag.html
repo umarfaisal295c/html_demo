@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Tag</title>
+</head>
+<body bgcolor="#7fff00">
+
+   
+
+    <form>
+        <lable>Name</lable> <input type="text" value="" name="fname" placeholder="Enter your name"> <br><br>
+
+        <lable>Password</lable> <input type="password" placeholder="Enter your Password" > <br><br>
+
+       <label>Gender</label> <input type="radio" name="gender" id="male">
+       <label for="male">Male</label> <input type="radio" name="gender" id="female"/>
+       <label for="female">Female</label> <br><br>
+
+                    <label>Hobbies</label> <input type="checkbox" name="hobby" id="Sports" >
+                    <label for="Sports">Sports</label>
+                    <input type="checkbox" name="hobby" id="Programming" >
+                    <label for="Programming">Programming</label> <input type="checkbox" name="hobby" id="Music">
+                    <label for="Music">Music</label> <br><br>
+        
+        <label >Message</label> <textarea rows="10" cols="10" placeholder="Enter message for CodeWithUmar"></textarea> <br><br>
+
+        <label>Country</label> 
+                                <select>
+                                        <option></option>
+                                        <option>Pakistan</option>
+                                        <option>India</option>
+                                        <option>Nepal</option>
+                                        <option>China</option>
+                                </select> <br><br>
+
+        <label>Cities</label> <select>
+                                <optgroup label="Pakistan">
+                                      <option></option>
+                                      <option>Lahore</option>
+                                      <option>Queeta</option>
+                                      <option>Islambad</option>
+                                      <option>Karachi</option>
+                                </optgroup>
+                             </select> <br><br>
+        
+        <label>Upload file</label>       <input type="file"> <br><br>
+
+        <label>Cities</label> <input list="Cities">
+                               <datalist id="Cities">
+                                  <option value="LAhore">
+                                  <option value="Queeta">
+                                  <option value="Islambad">
+                                  <option value="Karachi">
+                               </datalist>
+        <input type="submit"> <input type="reset" >   <br><br>
+        <input type="image" src="images/download.jpg"it" value="save"> 
+        <input type="hidden">
+        
+
+
+    </form>
+</body>
+</html>

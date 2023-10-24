@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url('../images/ele.jpg');
+    flex-direction: column;
+    background-size: cover;
+}
+form{
+    display: flex;
+    width: 90%;
+    background: transparent;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3{
+    font-size: 30px;
+    font-weight: 800;
+    color:#0ef ;
+    margin-bottom: 20px;
+    text-align: center
+}
+form input, form textarea{
+    border: 0;
+    outline: none;
+    margin: 10px 0;
+    padding: 20px;
+    font-size: 16px;
+    background: #f5f5f5;
+    caret-color: #0ef;
+}
+form input, form textarea::placeholder{
+    color: black;
+    font-size: 18px;
+    
+}
+form button{
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background: #ff5361;
+    transition: 1s;
+}
+form button:hover{
+    border-radius: 60px;
+    background: #0ef;
+    color: #555;
+}
